@@ -27,6 +27,7 @@ span.field-validation-error {
     color: #b94a48;
     font-weight: bold;
 }
+
 /*Bootstrap Overrides*/
 .navbar-inverse {
     background-color: #ff5200 ;
@@ -53,6 +54,7 @@ span.field-validation-error {
     line-height: 18px;
     font-weight: 700;
 }
+
 .dropdown-menu {
     box-shadow: none;
 }
