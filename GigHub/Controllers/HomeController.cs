@@ -8,15 +8,18 @@ namespace GigHub.Controllers
 {
     public class HomeController : Controller
     {
-        private ApplicationDbContext applicationDbContext;
+        private readonly ApplicationDbContext _applicationDbContext;
 
         public HomeController()
         {
-            applicationDbContext = new ApplicationDbContext();
+            _applicationDbContext = new ApplicationDbContext();
         }
         public ActionResult Index()
         {
-            var upcomingGigs = applicationDbContext.dbSetGig.Include(g => g.Artist).Where(g => g.DateTime > DateTime.Now);
+            var upcomingGigs = _applicationDbContext.dbSetGig
+                .Include(g => g.Artist)
+                .Include(g => g.Genre)
+                .Where(g => g.DateTime > DateTime.Now);
             return View(upcomingGigs);
         }
 
