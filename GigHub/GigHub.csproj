@@ -191,8 +191,13 @@
     <Compile Include="Migrations\201711251826044_AddNameToApplicationUser.Designer.cs">
       <DependentUpon>201711251826044_AddNameToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711261101118_AddAttendee.cs" />
+    <Compile Include="Migrations\201711261101118_AddAttendee.Designer.cs">
+      <DependentUpon>201711261101118_AddAttendee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Attendance.cs" />
     <Compile Include="ViewModels\ExternalLoginConfirmationViewModel.cs" />
     <Compile Include="ViewModels\ExternalLoginListViewModel.cs" />
     <Compile Include="ViewModels\ForgotPasswordViewModel.cs" />
@@ -295,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711251826044_AddNameToApplicationUser.resx">
       <DependentUpon>201711251826044_AddNameToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711261101118_AddAttendee.resx">
+      <DependentUpon>201711261101118_AddAttendee.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
