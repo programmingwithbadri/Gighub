@@ -29,7 +29,7 @@ namespace GigHub.Controllers
         [Authorize]
         public ActionResult Create()
         {
-            var viewModel = new GigFormViewModel { Genres = applicationDbContext.dbSetGenre.ToList() }; // gigFormViewModel should return Genres
+            var viewModel = new GigFormViewModel { Genres = applicationDbContext.DbSetGenre.ToList() }; // gigFormViewModel should return Genres
             return View(viewModel);
         }
 
@@ -45,7 +45,7 @@ namespace GigHub.Controllers
         {
             if (!ModelState.IsValid) // Checks whether the state changes else will go into this method
             {
-                gigFormViewModel.Genres = applicationDbContext.dbSetGenre.ToList(); // gigFormViewModel should return Genres
+                gigFormViewModel.Genres = applicationDbContext.DbSetGenre.ToList(); // gigFormViewModel should return Genres
                 return View("Create", gigFormViewModel);
             }
 
@@ -58,7 +58,7 @@ namespace GigHub.Controllers
 
             };
 
-            applicationDbContext.dbSetGig.Add(gig); // Add the Gig to the Gig table(dbSetGig) using DB Context(applicationDbContext)
+            applicationDbContext.DbSetGig.Add(gig); // Add the Gig to the Gig table(dbSetGig) using DB Context(applicationDbContext)
             applicationDbContext.SaveChanges(); // EF will generate the SQL statement and will update the database
 
             return RedirectToAction("Index", "Home"); // Returns to the Redirect Page. Index - Action, Home - Controller
