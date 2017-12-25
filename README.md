@@ -40,5 +40,5 @@ Additionally, users should be able to follow their favorite artists. When they f
   - Gig feed
 
 
-![Image]
+
   
