@@ -7,9 +7,9 @@ Additionally, users should be able to follow their favorite artists. When they f
 
 
 # Requirements
-
-### Authentication
 ----
+### Authentication
+
   - Sign up
   - Login
   - Log out
@@ -17,7 +17,7 @@ Additionally, users should be able to follow their favorite artists. When they f
   - Edit profile
 
 ### Gigs
-----
+
   - Add a gig
   - My upcoming gigs (for artist)
   - Edit a gig
@@ -27,13 +27,13 @@ Additionally, users should be able to follow their favorite artists. When they f
   - View gig details
 
 ### Gig Calendar
-----
+
   - Add a gig to calendar
   - Remove a gig from calendar
   - View gigs I’m attending
 
 ### Following
-----
+
   - Follow an artist
   - Unfollow an artist
   - Who I’m following
